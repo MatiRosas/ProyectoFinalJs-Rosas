@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Stockeando</title>
+
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="../multimedia/shop-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">STOCKEANDO</h1>
+        
+        <nav class="nav__navbar">
+            <div id="contenido"></div>
+                <a class="link__nav" href="./inicio.html">Home</a>
+                <a class="link__nav" href="#">Stock</a>
+                <button class="btn1" id="logoutBtn">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <h3>Valores del Dólar en Argentina</h3>
+            <div id="dolarOficial" class="valor-dolar">Dólar Oficial: cargando...</div>
+            <div id="dolarBlue" class="valor-dolar">Dólar Blue: cargando...</div>
+        </div>
+
+
+        <section class="lista">
+            <div class="button-add">
+                <button id="button1">¿Desea agregar un nuevo producto?</button>
+            </div>
+            <input type="text" id="producto" placeholder="Nombre del producto">
+            <button id="agregarProducto">Agregar Producto</button>
+            <div id="contenedor-producto" class="producto-individual"></div>
+        </section>
+
+    </main>   
+
+    <script src="../js/stock.js"></script>
+</body>
+</html>
+
+
+
+

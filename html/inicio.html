@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Stockeando</title>
+
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="../multimedia/shop-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">STOCKEANDO</h1>
+        <nav class="nav__navbar">
+            <div id="contenido"></div>
+            <a class="link__nav" href="#">Home</a>
+            <a class="link__nav" href="stock.html">Stock</a>
+            <button class="btn1" id="logoutBtn">Cerrar Sesión</button>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome">
+            <h2>Bienvenido a Stockeando</h2>
+            <div id="welcomeMessage"></div>
+            <p class="welcome__question">¿Qué estás esperando?</p>
+
+            <!-- Formulario para ingresar el nombre de la empresa -->
+            <form id="nombreEmpresaForm">
+                <label for="nombreEmpresa">Nombre de la Empresa:</label>
+                <input type="text" id="nombreEmpresa" name="nombreEmpresa" required>
+                <button class="btn2" type="submit">Guardar Nombre</button>
+            </form>
+            <p id="errorMensaje" style="color: red;"></p>
+        </div>
+    </main>
+
+    <script src="../js/inicio.js"></script>
+</body>
+</html>
