@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Stockeando</title>
+
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="./multimedia/shop-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="title">STOCKEANDO</h1>
+        <div id="contenido"></div>
+        <nav class="nav__navbar">
+            <a class="link__nav" href="./html/inicio.html">Home</a>
+            <a class="link__nav" href="./html/stock.html">Stock</a>
+            <button class="btn" id="loginBtn">Iniciar sesión</button>
+            <button class="btn1" id="logoutBtn">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <div class="fondo">
+        <span class="icono-cerrar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </span>
+        <div class="contenedor-form login active">
+            <h3>Iniciar Sesión</h3>
+            <form id="loginForm">
+                <div class="contenedor-input">
+                    <span class="icono">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+                    <input type="email" id="loginEmail" required>
+                    <label for="loginEmail">Email</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <span class="icono">
+                        <i class="bi bi-lock"></i>
+                    </span>
+                    <input type="password" id="loginPassword" required>
+                    <label for="loginPassword">Contraseña</label>
+                </div>
+
+                <div class="recordar">
+                    <label><input type="checkbox">Recordar Usuario</label>
+                    <a href="#">¿Olvidaste la contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn">Iniciar Sesión</button>
+
+                <div class="registrar">
+                    <p>¿No tienes cuenta? <a href="#" class="registrar-link">Registrarse</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor-form registrar">
+            <h3>Registrarse</h3>
+            <form id="registroForm"> 
+                <div class="contenedor-input">
+                    <span class="icono">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input type="text" id="username" required> 
+                    <label for="user">Nombre de Usuario</label>
+                </div>
+        
+                <div class="contenedor-input">
+                    <span class="icono">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+                    <input type="email" id="registerEmail" required> 
+                    <label for="email">Email</label>
+                </div>
+        
+                <div class="contenedor-input">
+                    <span class="icono">
+                        <i class="bi bi-lock"></i>
+                    </span>
+                    <input type="password" id="registerPassword" required> 
+                    <label for="password">Contraseña</label>
+                </div>
+        
+                <div class="recordar">
+                    <label for="checkbox"><input type="checkbox" required>Acepto los términos y condiciones</label>
+                </div>
+        
+                <button type="submit" class="btn">Registrarme</button>
+        
+                <div class="registrar">
+                    <p>¿Tienes una cuenta?</p> <a href="#" class="login-link">Iniciar Sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <main>
+
+        <h2 class="inicioSesion">¡Por Favor! Inicia sesión para que podamos seguir trabajando juntos.</h2>
+
+        <h4 class="flecha">←</h4>
+
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
