@@ -1,0 +1,68 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 92vh;
+
+    & h2 {
+        position: absolute;
+        font-family: "Josefin Slab", serif;
+        font-weight: 900;
+        font-size: 10em;
+        padding-bottom: 3%;
+        top: 10%;
+        right: 15%;
+        background-image: url(/multimedia/shop.jpg);
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: #fff;
+        animation: filling 8s ease infinite;
+    }
+
+    #welcomeMessage {
+        position: absolute;
+        font-family: "Josefin Slab", serif;
+        font-weight: 500;
+        font-size: 1.2em;
+        font-style: italic;
+        top: 80%;
+        left: 55%;
+    }
+
+    .welcome__question {
+        position: absolute;
+        font-family: "Josefin Slab", serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 3em;
+        top: 85%;
+        left: 55%;
+    }
+}
+
+@keyframes filling {
+    from {
+        background-position: center -30%;
+    }
+
+    to {
+        background-position: center 142%;
+    }
+}
+
+
+#nombreEmpresaForm {
+    padding-top: 3%;
+    
+    .btn2 {
+        height: 100%;
+                cursor: pointer;
+                font-weight: bold;
+                width: 20vw;
+                border-radius: 5%;
+                background-color: #ccc;
+                box-shadow: 0px 0px 15px #000;
+    }
+}
